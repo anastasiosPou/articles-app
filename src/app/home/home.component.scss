@@ -1,5 +1,5 @@
 //Mobile styles for Home component
-section {
+.home {
     display: flex;
     flex-flow: column nowrap;
     row-gap: 3rem;
@@ -21,10 +21,14 @@ form {
     }
 }
 
-section.articles {
+.articles {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(345px, 445px));
-    gap: 3rem;
-    align-self: stretch;
-    justify-content: center;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+    .articles {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
