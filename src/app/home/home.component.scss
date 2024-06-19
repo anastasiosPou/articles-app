@@ -22,13 +22,9 @@ form {
 }
 
 .articles {
+    align-self: stretch;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 500px));
+    justify-content: center;
     gap: 2rem;
-}
-
-@media (min-width: 1024px) {
-    .articles {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
