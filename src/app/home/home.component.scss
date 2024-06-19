@@ -28,3 +28,18 @@ form {
     justify-content: center;
     gap: 2rem;
 }
+
+.invalidCategory-warning {
+
+    background-color: #F7F2E7;
+    color: #B27600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: {
+        radius: 20px;
+        color: #EDDFC3;
+        width: 1px;
+    }
+}
