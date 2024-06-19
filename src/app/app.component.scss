@@ -6,3 +6,10 @@ header {
         }
     }
 }
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 2.5rem;
+    padding: 1rem;
+}
