@@ -1,15 +1,16 @@
 <article class="article-details">
-    <img src="" alt="Alt description" />
+    <img [src]="article?.photo" [alt]="article?.photoDescription" />
     <section class="article-description">
-        <h2 class="article-title">title</h2>
-        <h3 class="article-subTitle">subtitle</h3>
+        <h2 class="article-title">{{article?.title}}</h2>
+        <h3 class="article-subTitle">{{article?.subtitle}}</h3>
     </section>
     <section class="article-info">
-        <p class="article-author">Author</p>
-        <p class="article-datePosted">date</p>
-        <p class="article-category">category</p>
+        <p class="article-author">{{article?.author}}</p>
+        <p class="article-datePosted">{{article?.datePosted}}</p>
+        <p class="article-category">{{article?.category}}</p>
     </section>
     <section class="article-content">
-        <p>Bla bla bla</p>
+        <p>{{article?.content}}</p>
     </section>
+    <a [routerLink]="['']">Go Back</a>
 </article>
