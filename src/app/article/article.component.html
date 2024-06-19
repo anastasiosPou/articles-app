@@ -1,11 +1,15 @@
 <article>
     <img [src]="article.photo" [alt]="article.photoDescription" />
-    <h2 class="article-title">{{article.title}}</h2>
-    <h3 class="article-subTitle">{{article.subtitle}}</h3>
+    <header>
+        <h2 class="article-title">{{article.title}}</h2>
+        <h3 class="article-subTitle">{{article.subtitle}}</h3>
+    </header>
     <section class="article-info">
-        <p class="article-author">{{article.author}}</p>
-        <p class="article-datePosted">{{article.datePosted}}</p>
-        <p class="article-category">{{article.category}}</p>
+        <p>
+            <span class="author">{{article.author}}</span>,
+            <span class="date">{{article.datePosted}}</span> |
+            <span class="category">{{article.category}}</span>
+        </p>
     </section>
     <a [routerLink]="['details', article.id]">Read More</a>
 </article>
