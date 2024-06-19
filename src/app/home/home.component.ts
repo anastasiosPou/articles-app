@@ -63,8 +63,8 @@ export class HomeComponent {
     In case the category we used didn't return any results(because we haven't given a valid category)
     we should set the filtered article array again to the article array.
     */
-    // if (this.filteredArticles.length === 0) {
-    //   this.filteredArticles = this.articles;
-    // }
+    if (this.filteredArticles.length === 0) {
+      this.filteredArticles = this.articles;
+    }
   }
 }
