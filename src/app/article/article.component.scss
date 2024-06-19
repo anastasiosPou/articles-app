@@ -14,7 +14,6 @@ article {
     flex-flow: column nowrap;
     row-gap: 1.5rem;
     a {
-        margin-top: auto;
         &:link, &:visited {
             color: #222;
             font: {
@@ -38,6 +37,7 @@ img {
 }
 
 section.article-info {
+    margin-top: auto;
     p {
         font: {
             weight: 100;
