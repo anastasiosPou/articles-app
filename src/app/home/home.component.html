@@ -1,11 +1,11 @@
 <section>
     <section>
         <form>
-            <input type="text" id="category" placeholder="Search by category(sports, tech, etc.)" aria-label="Search by keyword" />
+            <input type="text" id="category" name="userInputCategory" placeholder="Search by category" aria-label="Search by keyword" [(ngModel)]="userInputCategory" (ngModelChange)="this.categoryFilterUpdate.next($event)"/>
         </form>
     </section>
     <section class="articles">
-        @for(article of articles; track article.id) {
+        @for(article of filteredArticles; track article.id) {
             <app-article [article] = "article"></app-article>
         }
     </section>
