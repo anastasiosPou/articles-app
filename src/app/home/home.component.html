@@ -5,6 +5,8 @@
         </form>
     </section>
     <section class="articles">
-        <p>Soon to be some articles</p>
+        @for(article of articles; track article.id) {
+            <app-article [article] = "article"></app-article>
+        }
     </section>
 </section>

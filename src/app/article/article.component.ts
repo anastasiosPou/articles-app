@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Article } from '../article';
 
 @Component({
   selector: 'app-article',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './article.component.scss'
 })
 export class ArticleComponent {
-
+  @Input() article!: Article
 }
