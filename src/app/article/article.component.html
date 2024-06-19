@@ -7,5 +7,5 @@
         <p class="article-datePosted">{{article.datePosted}}</p>
         <p class="article-category">{{article.category}}</p>
     </section>
-    <a href="">Read More</a>
+    <a [routerLink]="['details', article.id]">Read More</a>
 </article>

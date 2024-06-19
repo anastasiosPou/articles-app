@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-article-details',
@@ -8,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './article-details.component.scss'
 })
 export class ArticleDetailsComponent {
-
+  route: ActivatedRoute = inject(ActivatedRoute);
+  articleID: Number
+  constructor() {
+    const articleID = Number(this.route.snapshot.params["id"]);
+    this.articleID = articleID;
+  }
 }
