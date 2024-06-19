@@ -10,10 +10,6 @@ Run `npm install json-server` to serve the json data.
 
 Then run `json-server --watch src/data/db.json` to make the JSON data available to the app.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
 ## Description
 
 This is a coding challenge for Schoox. This Angular app filters articles based on the *Category* of the article.
