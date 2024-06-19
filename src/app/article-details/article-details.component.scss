@@ -35,3 +35,9 @@ article {
     }
 }
 
+@media (min-width: 1024px) {
+    article {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
