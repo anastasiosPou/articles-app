@@ -5,10 +5,11 @@
     <section class="articles">
         @for(article of filteredArticles; track article.id) {
             <app-article [article] = "article"></app-article>
-        } @empty {
+        }
+        <!-- } @empty {
             <section class="invalidCategory-warning">
                 <p>Oops! the category you've given isn't available. Why not try either news, sports, justice, environment or tech.</p>
             </section>
-        }
+        } -->
     </section>
 </section>
