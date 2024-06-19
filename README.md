@@ -6,22 +6,27 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
+Run `npm install json-server` to serve the json data.
+
+Then run `json-server --watch src/data/db.json` to make the JSON data available to the app.
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Description
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+This is a coding challenge for Schoox. This Angular app filters articles based on the *Category* of the article.
+The available categories are
+1. tech
+2. justice
+3. environment
+4. sports
+5. news
 
-## Running unit tests
+When we give an invalid category a warning will appear to notify the user that they should choose one of the provided categories.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Technologies Used
+1. Angular
+2. TypeScript 
+3. SCSS(SASS)
