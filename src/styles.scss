@@ -357,3 +357,40 @@ display: none;
 [hidden] {
 display: none;
 }
+
+/*
+ Styles that are shared globaly.
+*/
+
+header {
+    h2, h3 {
+        font-family: "Inter", sans-serif;
+    }
+
+    h3 {
+        font: {
+            weight: 500;
+        }
+    }
+}
+
+.category {
+    background-color: #C3D8ED;
+    padding: 0.4rem;
+    border-radius: 8px;
+}
+
+a {
+    &:link, &:visited {
+        color: #222;
+        font: {
+            size: 1.2rem;
+        }
+    }
+    &:active {
+        color: #000;
+    }
+    &:hover {
+        text-decoration: none;
+    }
+}

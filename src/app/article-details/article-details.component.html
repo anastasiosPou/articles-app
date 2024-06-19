@@ -1,16 +1,18 @@
-<article class="article-details">
-    <img [src]="article?.photo" [alt]="article?.photoDescription" />
-    <section class="article-description">
+<article>
+    <header>
+        <img [src]="article?.photo" [alt]="article?.photoDescription" />
         <h2 class="article-title">{{article?.title}}</h2>
         <h3 class="article-subTitle">{{article?.subtitle}}</h3>
-    </section>
-    <section class="article-info">
-        <p class="article-author">{{article?.author}}</p>
-        <p class="article-datePosted">{{article?.datePosted}}</p>
-        <p class="article-category">{{article?.category}}</p>
-    </section>
+        <section class="article-info">
+            <p>
+                <span class="author">{{article?.author}}</span>,
+                <span class="date">{{article?.datePosted}}</span> |
+                <span class="category">{{article?.category}}</span>
+            </p>
+        </section>
+    </header>
     <section class="article-content">
         <p>{{article?.content}}</p>
     </section>
-    <a [routerLink]="['']">Go Back</a>
+    <a [routerLink]="['']">Back</a>
 </article>

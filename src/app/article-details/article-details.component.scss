@@ -1,0 +1,37 @@
+// Mobile styles for Article-details component
+article {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 5rem;
+
+    a {
+        background-color: #45504B;
+        color: #fff;
+        display: inline-block;
+        position: fixed;
+        bottom: 2vh;
+        right: 4vw;
+        border-radius: 24px;
+        padding: 1rem;
+        text-decoration: none;
+        transition: background-color 0.8s;
+        font: {
+            family: "Inter", sans-serif;
+        }
+
+        &:hover {
+            background-color: #272B29;
+        }
+    }
+}
+
+.article-content {
+    p {
+        line-height: 1.5;
+        margin-bottom: 8vh;
+        font: {
+            family: Georgia, serif;
+        }
+    }
+}
+
